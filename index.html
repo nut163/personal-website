@@ -8,30 +8,25 @@
     <link rel="stylesheet" href="tailwind.css">
     <script src="animations.js"></script>
 </head>
-<body class="bg-dark text-light">
-    <nav id="navbar" class="navbar">
-        <div class="container mx-auto">
-            <a href="#about-section" data-scroll class="navbar-item">About</a>
-            <a href="#portfolio-section" data-scroll class="navbar-item">Portfolio</a>
-            <a href="#contact-section" data-scroll class="navbar-item">Contact</a>
-        </div>
+<body class="dark-theme">
+    <nav id="navbar" class="animation-scroll">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
-    <main>
-        <section id="about-section" class="section-content">
-            <h2 class="section-title">About</h2>
-            <p>{{about}}</p>
-        </section>
-        <section id="portfolio-section" class="section-content">
-            <h2 class="section-title">Portfolio</h2>
-            <p>{{portfolio}}</p>
-        </section>
-        <section id="contact-section" class="section-content">
-            <h2 class="section-title">Contact</h2>
-            <p>{{contact}}</p>
-        </section>
-    </main>
-    <footer class="footer">
-        <p>© 2022 Troy Spoon</p>
-    </footer>
+    <section id="about" class="animation-scroll">
+        <h1>About Troy Spoon</h1>
+        <p>Placeholder text for Troy Spoon's about section.</p>
+    </section>
+    <section id="portfolio" class="animation-scroll">
+        <h1>Portfolio</h1>
+        <p>Placeholder text for Troy Spoon's portfolio section.</p>
+    </section>
+    <section id="contact" class="animation-scroll">
+        <h1>Contact</h1>
+        <p>Placeholder text for Troy Spoon's contact section.</p>
+    </section>
 </body>
 </html>

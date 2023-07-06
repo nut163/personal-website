@@ -1,13 +1,25 @@
-1. **HTML Elements IDs**: These are the unique identifiers for each HTML element that will be manipulated by the JavaScript file (animations.js). For example, `navbar`, `about-section`, `portfolio-section`, `contact-section`.
+Shared Dependencies:
 
-2. **CSS Classes**: These are the classes that will be used to style the HTML elements. They will be defined in the styles.css and tailwind.css files and used in the index.html file. For example, `navbar`, `section-title`, `section-content`, `footer`.
+1. **HTML Elements ID Names**: These are the identifiers for the HTML elements that will be manipulated by the JavaScript functions. They include:
+   - `navbar`: The navigation bar at the top of the website.
+   - `about`: The section about Troy Spoon.
+   - `portfolio`: The section showcasing Troy's work.
+   - `contact`: The section for contacting Troy.
 
-3. **Tailwind CSS**: This is a utility-first CSS framework that will be used for styling the website. It will be included in the tailwind.css file and its classes will be used in the index.html file.
+2. **CSS Classes**: These are the classes defined in the CSS files (styles.css and tailwind.css) that will be used to style the HTML elements. They include:
+   - `.dark-theme`: Class for the dark theme of the website.
+   - `.animation-scroll`: Class for the scroll animation.
+   - `.animation-click`: Class for the click animation.
 
-4. **JavaScript Functions**: These are the functions that will be defined in the animations.js file and used to add interactivity to the website. For example, `scrollAnimation()`, `clickAnimation()`.
+3. **JavaScript Functions**: These are the functions defined in the animations.js file that will be used to add interactivity to the website. They include:
+   - `scrollAnimation()`: Function for the scroll animation.
+   - `clickAnimation()`: Function for the click animation.
 
-5. **Placeholder Text**: This is the text that will be used in the index.html file to allow for later filling of actual information. For example, `{{name}}`, `{{about}}`, `{{portfolio}}`, `{{contact}}`.
+4. **Tailwind CSS**: This is a utility-first CSS framework that will be used for styling the website. It is shared between the HTML and CSS files.
 
-6. **CSS Variables**: These are the variables that will be defined in the styles.css file and used to maintain consistency in the website's design. For example, `--dark-color`, `--light-color`, `--primary-color`.
+5. **Placeholder Text**: This is the dummy text that will be used in the HTML file for later replacement with actual information. It is shared between the HTML and JavaScript files.
 
-7. **HTML Data Attributes**: These are the attributes that will be used in the index.html file to store extra information about the HTML elements. They can be used by the JavaScript file (animations.js) to add interactivity to the website. For example, `data-scroll`, `data-click`.
+6. **Exported Variables**: These are the variables that are defined in one file and used in another. They include:
+   - `darkTheme`: Variable for the dark theme of the website.
+   - `animationScroll`: Variable for the scroll animation.
+   - `animationClick`: Variable for the click animation.

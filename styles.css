@@ -1,34 +1,36 @@
-:root {
-    --dark-color: #1a202c;
-    --light-color: #f7fafc;
-    --primary-color: #4a5568;
-}
+/* styles.css */
 
 body {
-    background-color: var(--dark-color);
-    color: var(--light-color);
-    font-family: 'Arial', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
 }
 
-.navbar {
-    background-color: var(--primary-color);
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1a1a1a;
 }
 
-.section-title {
-    color: var(--primary-color);
-    font-size: 2em;
+#about, #portfolio, #contact {
+    padding: 50px;
     text-align: center;
 }
 
-.section-content {
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 1em;
+.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
 }
 
-.footer {
-    background-color: var(--primary-color);
-    color: var(--light-color);
-    text-align: center;
-    padding: 1em;
+.animation-scroll {
+    transition: all 0.5s ease-in-out;
+}
+
+.animation-click {
+    transition: transform 0.3s ease-in-out;
+}
+
+.animation-click:active {
+    transform: scale(0.9);
 }

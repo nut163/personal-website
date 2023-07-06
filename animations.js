@@ -1,47 +1,31 @@
-// animations.js
-
-document.addEventListener('DOMContentLoaded', function() {
-    scrollAnimation();
-    clickAnimation();
-});
-
+```javascript
+// Scroll Animation
 function scrollAnimation() {
-    const scrollElements = document.querySelectorAll('[data-scroll]');
-
-    scrollElements.forEach((el) => {
-        el.style.opacity = 0;
-        el.style.transform = 'translateY(20px)';
-    });
-
-    const elementInView = (el, dividend = 1) => {
-        const elementTop = el.getBoundingClientRect().top;
-        return (
-            elementTop <= 
-            (window.innerHeight || document.documentElement.clientHeight) / dividend
-        );
-    };
-
-    const displayScrollElement = (element) => {
-        element.style.opacity = 1;
-        element.style.transform = 'translateY(0px)';
-        element.style.transition = 'opacity 500ms, transform 500ms';
-    };
+    const elements = document.querySelectorAll('.animation-scroll');
 
     window.addEventListener('scroll', () => {
-        scrollElements.forEach((el) => {
-            if (elementInView(el, 1.25)) {
-                displayScrollElement(el);
+        elements.forEach((element) => {
+            const positionFromTop = element.getBoundingClientRect().top;
+
+            if (positionFromTop - window.innerHeight <= 0) {
+                element.classList.add('animate');
             }
         });
     });
 }
 
+// Click Animation
 function clickAnimation() {
-    const clickElements = document.querySelectorAll('[data-click]');
+    const elements = document.querySelectorAll('.animation-click');
 
-    clickElements.forEach((el) => {
-        el.addEventListener('click', () => {
-            el.classList.toggle('active');
+    elements.forEach((element) => {
+        element.addEventListener('click', () => {
+            element.classList.add('animate');
         });
     });
 }
+
+// Call the functions
+scrollAnimation();
+clickAnimation();
+```
