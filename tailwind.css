@@ -1,0 +1,35 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+  @apply bg-gray-900 text-white;
+}
+
+#navbar {
+  @apply bg-gray-800;
+}
+
+.section-title {
+  @apply text-3xl font-bold text-gray-300;
+}
+
+.section-content {
+  @apply text-lg text-gray-400;
+}
+
+#about-section, #portfolio-section, #contact-section {
+  @apply my-8;
+}
+
+.footer {
+  @apply bg-gray-800 py-4;
+}
+
+[data-scroll] {
+  @apply transition-all duration-500 ease-in-out;
+}
+
+[data-click] {
+  @apply cursor-pointer;
+}
